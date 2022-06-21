@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Booky</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <script src="https://kit.fontawesome.com/9362eec6f6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href=css/styles.css> 
+ </head>
+<body>
+    <!-- Header + Menu de Navigation-->
+    <header>
+      <img src="images/Booki.png" id="logo">
+      <nav>
+      <ul>
+        <li><a href="#card-hosts">Hébergements</a></li>
+        <li><a href="#activity">Activités</a></li>
+      </ul>
+    </nav>
+    </header>
+    <!-- Section 1 : location et barre de recherche -->
+    <section id="search">
+      <div>
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p>En plein centre ville ou en pleine nature</p>
+      </div>
+        <form id="searchform">
+         <div id="location"><i class="fa-solid fa-location-dot"></i>
+         </div>
+         <div id="searchbar">
+         <input type="search" placeholder="Marseille, France" />
+         <input type="button" value="Recherche" class="search-btn" />
+         <input type="button" class="search-btn-mobile search-btn" /><i class="fa-solid fa-magnifying-glass search-btn-mobile-i"></i>
+         </div>
+        </form>
+    </section>
+    <!-- Section 2 : Filtres et bulle information -->
+      <div id="filtres">
+        <h2 class="h2-filter">Filtres</h2>
+        <button><i class="fa-solid fa-money-bill-wave"></i> Économique </button>
+        <button><i class="fa-solid fa-child-reaching"></i> Familial </button>
+        <button><i class="fa-solid fa-heart"></i> Romantique </button>
+        <button><i class="fa-solid fa-dog"></i> Animaux autorisés </button>
+      </div>
+      <div>
+        <p id="infos"><i class="fa-solid fa-info"></i> Plus de 500 logements sont disponibles dans cette ville </p>
+      </div>
+    <!-- Section 3 : Hébergements -->
+    <section id="card-hosts">
+      <div class="bloc-hosts">
+        <h1> Hébergements à Marseille </h1>
+            <div class="results">
+            <a href="#" class="left-card-img"><img class="img-hosts" src="./images/small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"/>
+             <div class="left-card-img-text">
+               <h2 class="title-card"> Auberge de la Cannebière </h2>
+               <p> Nuit à partir de <strong> 25€ </strong></p>
+               <div>étoiles</div>
+             </div>
+            </a>
+            <a href="#" class="left-card-img"><img class="img-hosts" src="./images/small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"/>
+            <div class="left-card-img-text"> 
+              <h2 class="title-card"> Hôtel du Port </h2>
+              <p> Nuit à partir de <strong> 52€ </strong></p>
+              <div>étoiles</div>
+            </div>
+            </a>
+            <a href="#" class="left-card-img"><img class="img-hosts" src="./images/small/reisetopia-B8WIgxA_PFU-unsplash.jpg"/>
+             <div class="left-card-img-text">
+              <h2 class="title-card"> Hôtel Les mouettes </h2>
+              <p> Nuit à partir de <strong> 75€ </strong></p>
+              <div>étoiles</div>
+             </div>
+            </a>
+            <a href="#">
+              <h1> Hôtel Les mouettes </h1>
+              <p> Nuit à partir de <strong> 75€ </strong></p>
+              <div>étoiles</div>
+            </a>
+            <a href="#">
+              <h1> Hôtel Les mouettes </h1>
+              <p> Nuit à partir de <strong> 75€ </strong></p>
+              <div>étoiles</div>
+            </a>
+            <a href="#">
+              <h1> Hôtel Les mouettes </h1>
+              <p> Nuit à partir de <strong> 75€ </strong></p>
+              <div>étoiles</div>
+            </a>
+          </div>
+          <div>
+            <a href="#" class="title-card"><h1>Afficher plus</h1></a>
+          </div>
+      </div>    
+      <div class="bloc-pop">
+       <div class="title-pop">
+        <h1> Les plus populaires </h1>
+        <i class="fa-solid fa-star"></i>
+       </div>
+       <div class="pop-results">
+        <a href="#" class="right-card-img"><img class="img-pop" src="./images/small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"/>
+          <div class="right-card-img-text">
+            <h2 class="title-card"> Hôtel Le Soleil du matin </h2>
+            <p> Nuit à partir de <strong> 128€ </strong></p>
+            <div>étoiles</div>
+          </div>
+         </a>
+       </div>
+     </div>
+   </section>
+    <!-- Section 4: Activités -->
+    <section id="activity">
+      <h1 class="title-activity"> Activités à Marseille </h1>  
+       <div class="cards-activity">
+        <div class="act-card-1">
+         <picture>
+          <img class="img-act-1" src="./images/act-small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"/>
+         </picture>
+         <div>
+          <p class="act-card-text">
+            <strong> Vieux Port </strong>
+          </p>
+         </div>
+        </div>
+        <div class="act-card-1">
+          <picture>
+           <img class="img-act-1" src="./images/act-small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"/>
+          </picture>
+          <div>
+           <p class="act-card-text">
+             <strong> Vieux Port </strong>
+           </p>
+          </div>
+         </div>
+         <div class="act-card-1">
+          <picture>
+           <img class="img-act-1" src="./images/act-small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"/>
+          </picture>
+          <div>
+           <p class="act-card-text">
+             <strong> Vieux Port </strong>
+           </p>
+          </div>
+         </div>
+         <div class="act-card-1">
+          <picture>
+           <img class="img-act-1" src="./images/act-small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"/>
+          </picture>
+          <div>
+           <p class="act-card-text">
+             <strong> Vieux Port </strong>
+           </p>
+          </div>
+         </div>
+       </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+   </footer>
+</body>
+</html>    

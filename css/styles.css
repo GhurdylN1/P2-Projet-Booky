@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2family=Raleway:wght@500;700&display=swap');
+
+/* font-family: 'Raleway', sans-serif; */
+
+*
+{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body
+{
+    width: 1440px;
+    margin: auto;
+    font-family: 'Raleway', sans-serif;
+    color: #000;
+}
+
+h1
+{
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+
+h2
+{
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+}
+
+p
+{
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+a
+{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    color: #000;
+}
+
+/* -- Nav section --*/
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+#logo
+{
+    width: 120px;
+    height: 50px;
+    margin-top: 30px;
+}
+
+nav
+{
+    display: flex;
+}
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+
+nav li
+{
+    margin-right: 50px;
+}
+
+nav a
+{
+    text-decoration: none;
+    color: black;
+    padding: 30px;
+}
+
+nav a:hover
+{
+    color: #0065fc;
+    border-top: 3px solid #0065fc;
+    padding-top: 30px;
+    padding: 30px;
+}
+
+/* -- Nav -- End --*/
+
+/* -- Section 1 -- Search & location -*/
+
+#searchform
+{
+    
+    display: flex;
+    width: 375px;
+    border-radius: 15px;
+    margin: 25px 0px 25px 0px;
+    height: 50px;
+    border: 1px solid #f2f2f2;
+}
+
+#location
+{   
+    background-color: #f2f2f2;
+    border-radius: 15px 0px 0px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;    
+}
+
+#searchbar
+{
+    display: flex;
+}
+
+#searchform input
+{
+    border: none;
+    padding: 15px 25px 15px 15px;
+    font-weight: bold;
+}
+
+#searchform input::placeholder
+{
+    font-weight: bold;
+    color: #000;
+}
+
+.search-btn
+{
+    border: 2px solid #0065fc;
+    background-color: #0065fc;
+    border-radius: 0px 15px 15px 0px;
+    font-weight: bold;
+    color: #fff;
+    width: 118px;
+    cursor: pointer;
+    transition: transform 300ms;
+}
+
+.search-btn:hover
+{
+    transform: scale(1.10);
+}
+
+.search-btn-mobile 
+{
+    display: none;
+}
+
+#searchbar i
+{
+    display: none;
+}
+
+/* -- Search & location -- End --*/
+
+/* -- Section 2 -- Filters -*/
+
+#filtres
+{   
+    border: none;
+    display: flex;
+    gap: 40px;
+    margin: 25px;
+}
+
+.h2-filter
+{
+    margin-top: 15px;
+}
+
+#filtres button
+{      
+    font-weight: bold;
+    font-size: 15px;
+    background-color: transparent;
+    border: 1px solid #E5E5E5;
+    padding: 0 20px 0 0;
+    border-radius: 65px;
+    cursor: pointer;
+    transition: transform 300ms;
+}
+
+#filtres i
+{   
+    color: #0065fc;
+    border: 1px solid #def0ff;
+    background-color: #def0ff;
+    border-radius: 65px;
+    padding: 15px;
+    display: row;
+}
+
+#filtres button:hover
+{
+    transform: scale(1.10);
+}
+
+#filtres i:hover
+{
+    color: #def0ff;
+    border: 1px solid #0065fc;
+    background-color: #0065fc;
+}
+
+#infos i
+{   
+    color: #0065fc;
+    border: 1px solid #E5E5E5;
+    border-radius: 65px;
+    padding: 5px 10px 5px 10px;
+    margin-bottom: 25px;
+}
+
+/* -- Filters -- End -- */
+
+/* -- Section 3 -- Hosts --*/
+
+#card-hosts
+{
+    display: flex;
+}
+
+.bloc-hosts
+{
+    flex-direction: column;
+    width: 900px;
+    display: flex;
+    flex: 2;
+    border-radius: 20px;
+    background-color: #E5E5E5;
+    gap: 20px;
+    padding: 40px;
+}
+
+.bloc-pop
+{
+    flex-direction: column;
+    width: 400px;
+    display: flex;
+    flex: 1;
+    margin-left: 40px;
+    border-radius: 20px;
+    background-color: #E5E5E5;
+    gap: 20px;
+    padding: 40px;
+}
+
+.results
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    height: auto;
+}
+
+.left-card-img
+{
+    width: 235px;
+    background-color: #fff;
+    border-radius: 20px;
+    max-height: 200px;
+    padding: 5px;
+    flex-grow: 1;
+    box-shadow: 0 0 15px #f2f2f2;
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.left-card-img:hover
+{
+    transform: scale(0.9);
+}
+
+.img-hosts
+{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    height: 50%;
+}
+
+.left-card-img-text
+{
+    padding: 10px;
+}
+
+
+.title-card:hover
+{
+    color: #0065fc;
+}
+
+.title-pop
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pop-result
+{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 100%;
+}
+
+.right-card-img
+{
+    width: auto;
+    background-color: #fff;
+    border-radius: 20px;
+    height: 135%;
+    padding: 5px;
+    display: flex;
+    box-shadow: 0 0 15px #f2f2f2;
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.right-card-img:hover
+{
+    transform: scale(0.9);
+}
+
+.img-pop
+{
+    width: 35%;
+    border-radius: 20px 0 0 20px;
+    object-fit: cover;
+}
+
+.right-card-img-text
+{
+    padding: 10px;
+}
+
+/* -- css des icones étoiles à placer ici--*/
+
+#activity
+{
+    margin: auto;
+}
+
+.title-activity
+{
+    margin: 40px;
+}
+
+.cards-activity
+{
+    height: 500px;
+    display: flex;
+    margin-top: 25px;
+    gap: 40px;
+}
+
+.act-card-1
+{
+    width: 25%;
+    height: 475px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px #9b9b9b;
+    transition: transform 0.5s ease-in-out;
+}
+
+.act-card-1:hover
+{
+    transform: scale(0.9);
+}
+
+
+.img-act-1
+{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    height: 400px;
+}
+
+.act-card-text
+{
+    display: flex;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+/* -- Medias --*/
+
+@media screen and (max-width: 767px)
+{
+        body
+        {
+            width: auto;
+        }
+        /* -- Nav --*/
+        header
+        {
+            flex-direction: column;
+            border-top: 0;
+            border-bottom: 3px solid #f2f2f2;
+            padding-bottom: 30px;
+        }
+
+        nav a:hover
+        {
+            border-top: 0;
+            border-bottom: 3px solid #0065fc;
+        } 
+
+        nav
+        {
+            margin-top: 30px;
+        }
+
+        /* -- Search --*/
+        #search
+        {
+            margin: 20px;
+        }
+        .search-btn
+        {
+            display: none;
+        }
+        #searchform
+        {
+            width: 100%;
+        }
+        .search-btn-mobile
+        {
+            display: block;
+            width: 50px;
+            border: none;
+            border-radius: 15px;
+            background-color: #0065fc;
+        }
+        #searchbar
+        {
+            position: relative;
+            width: 100%;
+            justify-content: space-between;
+        }
+        #searchbar i
+        {
+            display: block;
+            color: white;
+            cursor: pointer;
+            position:absolute;
+            top: 17px;
+            right: 17px;
+        }
+
+        /* -- Filters --*/
+        #filtres
+        {
+          width: auto;
+          display: block;  
+        }
+
+        #filtres button 
+        {
+            margin: 10px;
+        }
+        #filtres h2 
+        {
+            margin: 20px;
+        }
+}    
+
