@@ -54,7 +54,7 @@ header
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px;
+    margin: 35px;
 }
 
 #logo
@@ -98,6 +98,11 @@ nav a:hover
 /* -- Nav -- End --*/
 
 /* -- Section 1 -- Search & location -*/
+
+#search
+{
+   margin: 35px;
+}
 
 #searchform
 {
@@ -174,7 +179,7 @@ nav a:hover
     border: none;
     display: flex;
     gap: 40px;
-    margin: 25px;
+    margin: 35px;
 }
 
 .h2-filter
@@ -216,6 +221,11 @@ nav a:hover
     background-color: #0065fc;
 }
 
+.bloc-info
+{
+    margin: 35px;
+}
+
 #infos i
 {   
     color: #0065fc;
@@ -232,6 +242,7 @@ nav a:hover
 #card-hosts
 {
     display: flex;
+    margin: 35px;
 }
 
 .bloc-hosts
@@ -304,6 +315,11 @@ nav a:hover
     color: #0065fc;
 }
 
+.more-hosts
+{
+    margin-top: 50px;
+}
+
 .title-pop
 {
     display: flex;
@@ -311,20 +327,20 @@ nav a:hover
     align-items: center;
 }
 
-.pop-result
+.pop-results
 {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    height: 100%;
+    height: auto;
 }
 
 .right-card-img
 {
-    width: auto;
+    height: 150px;
     background-color: #fff;
     border-radius: 20px;
-    height: 135%;
+    max-width: 400px;
     padding: 5px;
     display: flex;
     box-shadow: 0 0 15px #f2f2f2;
@@ -351,9 +367,13 @@ nav a:hover
 
 /* -- css des icones étoiles à placer ici--*/
 
+/* -- Section 3 -- End --*/
+
+/* -- Section 4 -- Activity --*/
+
 #activity
 {
-    margin: auto;
+    margin: 35px;
 }
 
 .title-activity
@@ -399,7 +419,44 @@ nav a:hover
     padding-top: 10px;
 }
 
-/* -- Medias --*/
+/* -- Section 4 -- End --*/
+
+/* -- Footer --*/
+
+.contact-ft
+{
+    background-color: #E5E5E5;
+    display: flex;
+    padding-left: 45px;
+    padding-top: 25px;
+}
+
+.bloc-ft
+{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: flex-start;
+}
+
+.h2-ft
+{
+    padding-bottom: 15px;
+}
+
+.ft-link
+{
+    padding: 5px 5px 5px 0;
+}
+
+.ft-link:hover
+{
+    color: #0065fc;
+}
+
+/* -- Footer -- End --*/
+
+/* -- Medias queries--*/
 
 @media screen and (max-width: 767px)
 {
