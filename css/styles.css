@@ -31,12 +31,18 @@ h2
     font-size: 17px;
 }
 
-p
+h3
 {
     text-align: left;
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
-    margin-top: 10px;
+} 
+
+p
+{
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
 }
 
 a
@@ -248,7 +254,6 @@ nav a:hover
 .bloc-hosts
 {
     flex-direction: column;
-    width: 900px;
     display: flex;
     flex: 2;
     border-radius: 20px;
@@ -260,7 +265,6 @@ nav a:hover
 .bloc-pop
 {
     flex-direction: column;
-    width: 400px;
     display: flex;
     flex: 1;
     margin-left: 40px;
@@ -308,7 +312,6 @@ nav a:hover
 {
     padding: 10px;
 }
-
 
 .title-card:hover
 {
@@ -365,7 +368,22 @@ nav a:hover
     padding: 20px;
 }
 
-/* -- css des icones étoiles à placer ici--*/
+.blue-star
+{
+    color: #0065fc;
+    font-size: 14px;
+}
+
+.grey-star
+{
+    color: #f2f2f2;
+    font-size: 14px;
+}
+
+.stars-text-top
+{
+    margin-bottom: 25px;
+}
 
 /* -- Section 3 -- End --*/
 
