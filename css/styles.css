@@ -11,7 +11,7 @@
 
 body
 {
-    width: 1440px;
+    max-width: 1440px;
     margin: auto;
     font-family: 'Raleway', sans-serif;
     color: #000;
@@ -355,14 +355,14 @@ nav a:hover
 
 .img-pop
 {
-    width: 35%;
+    width: 40%;
     border-radius: 20px 0 0 20px;
     object-fit: cover;
 }
 
 .right-card-img-text
 {
-    padding: 10px;
+    padding: 20px;
 }
 
 /* -- css des icones étoiles à placer ici--*/
@@ -458,6 +458,37 @@ nav a:hover
 
 /* -- Medias queries--*/
 
+@media screen and (min-width: 768px) and (max-width: 991px)
+{
+       #card-hosts
+       {
+        flex-direction: column;
+        width: 100%;
+       } 
+
+       .bloc-hosts
+       {
+        width: 100%;
+        margin-bottom: 25px;
+       }
+
+       .bloc-pop
+       {
+        width: auto;
+        margin: 0;
+       }
+  
+       .left-card-img
+       {
+        width: 25%;
+       }
+
+       .right-card-img
+       {
+        max-width: 95%;
+       }
+}
+
 @media screen and (max-width: 767px)
 {
         body
@@ -535,6 +566,41 @@ nav a:hover
         #filtres h2 
         {
             margin: 20px;
+        }
+
+        /* -- Hosts --*/
+        #card-hosts
+        {
+            flex-direction: column-reverse;
+            margin: 0;
+        }
+        .bloc-hosts
+        {
+            width: auto;
+            background-color: #fff;
+            padding: 0;
+            margin: 20px;
+        }
+        
+        .bloc-pop
+        {
+            width: auto;
+            height: auto;
+            border-radius: 0;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .right-card-img
+        {
+            width: 100%;
+            max-width: none;
+        }
+
+        .left-card-img
+        {
+            width: 100%;
+            margin: 10px 0;
         }
 }    
 
