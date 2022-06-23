@@ -11,41 +11,33 @@ body
 {
     max-width: 1440px;
     margin: auto;
+    text-align: left;
     font-family: 'Raleway', sans-serif;
     color: #000;
 }
 
 h1
 {
-    text-align: left;
-    font-family: 'Raleway', sans-serif;
     font-size: 20px;
 }
 
 h2
 {
-    text-align: left;
-    font-family: 'Raleway', sans-serif;
     font-size: 17px;
 }
 
 h3
 {
-    text-align: left;
-    font-family: 'Raleway', sans-serif;
     font-size: 16px;
 } 
 
 p
 {
-    text-align: left;
-    font-family: 'Raleway', sans-serif;
     font-size: 15px;
 }
 
 a
 {
-    font-family: 'Raleway', sans-serif;
     font-size: 16px;
     text-decoration: none;
     color: #000;
@@ -190,7 +182,7 @@ nav a:hover
     font-weight: bold;
     font-size: 15px;
     background-color: transparent;
-    border: 1px solid #E5E5E5;
+    border: 1px solid #f2f2f2;
     padding: 0 20px 0 0;
     border-radius: 65px;
     cursor: pointer;
@@ -249,7 +241,7 @@ nav a:hover
     display: flex;
     flex: 2;
     border-radius: 20px;
-    background-color: #E5E5E5;
+    background-color: #f2f2f2;
     gap: 20px;
     padding: 40px;
 }
@@ -261,7 +253,7 @@ nav a:hover
     flex: 1;
     margin-left: 40px;
     border-radius: 20px;
-    background-color: #E5E5E5;
+    background-color: #f2f2f2;
     gap: 20px;
     padding: 40px;
 }
@@ -276,7 +268,7 @@ nav a:hover
 
 .left-card-img
 {
-    width: 235px;
+    width: 25%;
     background-color: #fff;
     border-radius: 20px;
     max-height: 200px;
@@ -483,7 +475,7 @@ nav a:hover
 
 .contact-ft
 {
-    background-color: #E5E5E5;
+    background-color: #f2f2f2;
     display: flex;
     padding-left: 45px;
     padding-top: 25px;
@@ -518,10 +510,29 @@ nav a:hover
 
 @media screen and (min-width: 768px) and (max-width: 991px)
 {
+       
+       /* -- Filters --*/
+       #filtres
+       {
+         width: auto;
+         display: block;  
+       }
+
+       #filtres button 
+       {
+           margin: 10px;
+       }
+       #filtres h2 
+       {
+           margin: 20px;
+       }
+       
+       /*-- Hosts --*/ 
        #card-hosts
        {
         flex-direction: column;
         width: 100%;
+        margin: 0;
        } 
 
        .bloc-hosts
@@ -588,7 +599,7 @@ nav a:hover
             width: 100%;
             display: flex;
             justify-content: center;
-            border-bottom: 3px solid #E5E5E5;
+            border-bottom: 3px solid #f2f2f2;
             padding-bottom: 30px;
         }
 
