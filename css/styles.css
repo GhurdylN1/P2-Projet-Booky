@@ -390,7 +390,7 @@ nav a:hover
     gap: 40px;
 }
 
-.act-card-1
+.act-card-1-4
 {
     width: 25%;
     height: 475px;
@@ -400,6 +400,11 @@ nav a:hover
 }
 
 .act-card-2-3
+{
+    width: 25%;
+}
+
+.act-card-5-6
 {
     width: 25%;
 }
@@ -421,7 +426,24 @@ nav a:hover
     transition: transform 0.5s ease-in-out;
 }
 
-.act-card-1:hover
+.act-card-5
+{
+    height: 205px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px #9b9b9b;
+    transition: transform 0.5s ease-in-out;
+    margin-bottom: 35px;
+}    
+
+.act-card-6
+{
+    height: 230px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px #9b9b9b;
+    transition: transform 0.5s ease-in-out;
+}
+
+.act-card-1-4:hover
 {
     transform: scale(0.9);
 }
@@ -436,7 +458,17 @@ nav a:hover
     transform: scale(0.9);
 }
 
-.img-act-1
+.act-card-5:hover
+{
+    transform: scale(0.9);
+}
+
+.act-card-6:hover
+{
+    transform: scale(0.9);
+}
+
+.img-act-1-4
 {
     object-fit: cover;
     width: 100%;
@@ -458,6 +490,22 @@ nav a:hover
     width: 100%;
     border-radius: 15px 15px 0 0;
     height: 120px;
+}
+
+.img-act-5
+{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    height: 155px;
+}
+
+.img-act-6
+{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    height: 180px;
 }
 
 .act-card-text
@@ -687,6 +735,35 @@ nav a:hover
         {
             width: 100%;
             margin: 10px 0;
+        }
+
+        /*-- Activity --*/
+
+        .cards-activity
+        {
+            height: auto;
+            flex-direction: column;
+        }
+
+        .act-card-1-4
+        {
+            width: 100%;
+            height: 200px;
+        }
+
+        .act-card-2-3, .act-card-5-6
+        {
+            width: 100%;
+        }
+
+        .act-card-2, .act-card-3, .act-card-5, .act-card-6
+        {
+            height: 200px;
+        }
+
+        .img-act-1-4, .img-act-2, .img-act-3, .img-act-5, .img-act-6
+        {
+            height: 150px;
         }
 }    
 
