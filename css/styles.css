@@ -1,4 +1,3 @@
-/* font-family: 'Raleway', sans-serif; */
 
 *
 {
@@ -196,7 +195,6 @@ nav a:hover
     background-color: #def0ff;
     border-radius: 65px;
     padding: 15px;
-    display: row;
 }
 
 #filtres button:hover
