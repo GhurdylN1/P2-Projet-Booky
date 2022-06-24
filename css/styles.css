@@ -24,7 +24,7 @@ h2
     font-size: 17px;
 }
 
-h3
+h3, a
 {
     font-size: 16px;
 } 
@@ -36,7 +36,6 @@ p
 
 a
 {
-    font-size: 16px;
     text-decoration: none;
     color: #000;
 }
@@ -78,7 +77,6 @@ nav a:hover
 {
     color: #0065fc;
     border-top: 3px solid #0065fc;
-    padding: 30px;
 }
 
 /* -- Nav -- End --*/
@@ -92,7 +90,6 @@ nav a:hover
 
 #searchform
 {
-    
     display: flex;
     width: 375px;
     border-radius: 15px;
@@ -125,7 +122,6 @@ nav a:hover
 
 #searchform input::placeholder
 {
-    font-weight: bold;
     color: #000;
 }
 
@@ -144,12 +140,7 @@ nav a:hover
     transform: scale(1.10);
 }
 
-.search-btn-mobile 
-{
-    display: none;
-}
-
-#searchbar i
+.search-btn-mobile, #searchbar i
 {
     display: none;
 }
@@ -171,39 +162,42 @@ nav a:hover
     margin-top: 15px;
 }
 
+#filtres i
+{   
+    color: #0065fc;
+    border: 2px solid #deebff;
+    background-color: #deebff;
+    border-radius: 65px;
+    padding: 15px;
+    margin-right: 10px;
+    transform: scale(1.1);
+}
+
 #filtres button
 {      
     font-weight: bold;
     font-size: 15px;
     background-color: transparent;
-    border: 1px solid #f2f2f2;
-    padding: 0 20px 0 0;
+    border: 2px solid #f2f2f2;
+    padding: 0 15px 0 0;
     border-radius: 65px;
     cursor: pointer;
     transition: transform 300ms ease-in-out;
 }
 
-#filtres i
-{   
-    color: #0065fc;
-    border: 1px solid #def0ff;
-    background-color: #def0ff;
-    border-radius: 65px;
-    padding: 15px;
-    margin-right: 10px;
+#filtres button:hover i
+{
+    color: #deebff;
+    border: 2px solid #0065fc;
+    background-color: #0065fc;
+    transform: scale(1.1);
 }
 
 #filtres button:hover
 {
-    transform: scale(1.10);
+    transform: scale(1.1);
 }
 
-#filtres i:hover
-{
-    color: #def0ff;
-    border: 1px solid #0065fc;
-    background-color: #0065fc;
-}
 
 .fa-child-reaching
 {
@@ -219,7 +213,7 @@ nav a:hover
 #infos i
 {   
     color: #0065fc;
-    border: 1px solid #E5E5E5;
+    border: 1px solid #f2f2f2;
     border-radius: 65px;
     padding: 5px 10px 5px 10px;
     margin-bottom: 25px;
@@ -450,68 +444,40 @@ nav a:hover
     transition: transform 0.5s ease-in-out;
 }
 
-.act-card-1-4:hover
+.act-card-1-4:hover, .act-card-2:hover, .act-card-3:hover, .act-card-5:hover, .act-card-6:hover
 {
     transform: scale(0.9);
 }
 
-.act-card-2:hover
-{
-    transform: scale(0.9);
-}
-
-.act-card-3:hover
-{
-    transform: scale(0.9);
-}
-
-.act-card-5:hover
-{
-    transform: scale(0.9);
-}
-
-.act-card-6:hover
-{
-    transform: scale(0.9);
-}
-
-.img-act-1-4
+.img-act-1-4, .img-act-2, .img-act-3, .img-act-5, .img-act-6
 {
     object-fit: cover;
     width: 100%;
     border-radius: 15px 15px 0 0;
+}
+
+.img-act-1-4
+{
     height: 420px;
 }
 
 .img-act-2
 {
-    object-fit: cover;
-    width: 100%;
-    border-radius: 15px 15px 0 0;
     height: 225px;
 }
 
 .img-act-3
 {
-    object-fit: cover;
-    width: 100%;
-    border-radius: 15px 15px 0 0;
     height: 120px;
 }
 
 .img-act-5
 {
-    object-fit: cover;
-    width: 100%;
-    border-radius: 15px 15px 0 0;
     height: 155px;
 }
 
 .img-act-6
 {
-    object-fit: cover;
-    width: 100%;
-    border-radius: 15px 15px 0 0;
     height: 180px;
 }
 
@@ -771,5 +737,25 @@ nav a:hover
         .img-act-1-4, .img-act-2, .img-act-3, .img-act-5, .img-act-6
         {
             height: 150px;
+        }
+
+        /* -- Footer --*/
+
+        .contact-ft
+        {
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+        }
+
+        .contact-ft h2, a
+        {
+            font-size: 15px;
+        }       
+        
+        .bloc-ft
+        {
+            width: 100%; 
+            padding: 10px;
         }
 }    
