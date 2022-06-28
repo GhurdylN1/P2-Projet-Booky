@@ -40,7 +40,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 35px;
+    margin: 0 35px 35px 35px;
 }
 
 #logo {
@@ -120,8 +120,7 @@ nav a:hover {
     transform: scale(1.10);
 }
 
-.search-btn-mobile,
-#searchbar i {
+.search-btn-mobile, #searchbar i {
     display: none;
 }
 
@@ -188,6 +187,7 @@ nav a:hover {
     border-radius: 65px;
     padding: 5px 10px 5px 10px;
     margin-bottom: 25px;
+    margin-right: 10px;
 }
 
 /* -- Filters -- End -- */
@@ -206,18 +206,18 @@ nav a:hover {
     border-radius: 20px;
     background-color: #f2f2f2;
     gap: 20px;
-    padding: 20px;
+    padding: 45px;
 }
 
 .bloc-pop {
     flex-direction: column;
     display: flex;
     flex: 1;
-    margin-left: 15px;
+    margin-left: 30px;
     border-radius: 20px;
     background-color: #f2f2f2;
     gap: 20px;
-    padding: 20px;
+    padding: 40px;
 }
 
 .results {
@@ -276,6 +276,7 @@ nav a:hover {
     flex-direction: column;
     gap: 30px;
     height: auto;
+    padding-top: 15px;
 }
 
 .right-card-img {
@@ -330,7 +331,7 @@ nav a:hover {
 }
 
 .title-activity {
-    margin: 40px;
+    margin: 40px 40px 40px 0;
 }
 
 .cards-activity {
@@ -386,19 +387,12 @@ nav a:hover {
     transition: transform 0.5s ease-in-out;
 }
 
-.act-card-1-4:hover,
-.act-card-2:hover,
-.act-card-3:hover,
-.act-card-5:hover,
-.act-card-6:hover {
+.act-card-1-4:hover, .act-card-2:hover, .act-card-3:hover, .act-card-5:hover, .act-card-6:hover {
     transform: scale(0.9);
+    cursor: pointer;
 }
 
-.img-act-1-4,
-.img-act-2,
-.img-act-3,
-.img-act-5,
-.img-act-6 {
+.img-act-1-4, .img-act-2, .img-act-3, .img-act-5, .img-act-6 {
     object-fit: cover;
     width: 100%;
     border-radius: 15px 15px 0 0;
@@ -637,23 +631,15 @@ nav a:hover {
         height: 200px;
     }
 
-    .act-card-2-3,
-    .act-card-5-6 {
+    .act-card-2-3, .act-card-5-6 {
         width: 100%;
     }
 
-    .act-card-2,
-    .act-card-3,
-    .act-card-5,
-    .act-card-6 {
+    .act-card-2, .act-card-3, .act-card-5, .act-card-6 {
         height: 200px;
     }
 
-    .img-act-1-4,
-    .img-act-2,
-    .img-act-3,
-    .img-act-5,
-    .img-act-6 {
+    .img-act-1-4, .img-act-2, .img-act-3, .img-act-5, .img-act-6 {
         height: 150px;
     }
 
