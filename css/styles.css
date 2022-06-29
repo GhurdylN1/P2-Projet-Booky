@@ -111,7 +111,7 @@ nav a:hover {
     background-color: #0065fc;
     border-radius: 0px 15px 15px 0px;
     color: #fff;
-    width: 118px;
+    width: 134px;
     cursor: pointer;
     transition: transform 300ms;
 }
@@ -120,7 +120,7 @@ nav a:hover {
     transform: scale(1.10);
 }
 
-.search-btn-mobile, #searchbar i {
+.search-btn-mobile, .fa-magnifying-glass, .search-btn-mobile-i {
     display: none;
 }
 
@@ -179,15 +179,19 @@ nav a:hover {
 
 .bloc-info {
     margin: 35px;
+    display: flex;
 }
 
-#infos i {
+.bloc-info i {
     color: #0065fc;
     border: 1px solid #f2f2f2;
     border-radius: 65px;
     padding: 5px 10px 5px 10px;
-    margin-bottom: 25px;
     margin-right: 10px;
+}
+
+.infos {
+    margin-top: 5px;
 }
 
 /* -- Filters -- End -- */
@@ -432,7 +436,8 @@ nav a:hover {
     background-color: #f2f2f2;
     display: flex;
     padding-left: 45px;
-    padding-top: 25px;
+    padding-top: 45px;
+    height: 225px;
 }
 
 .bloc-ft {
@@ -565,7 +570,7 @@ nav a:hover {
         justify-content: space-between;
     }
 
-    #searchbar i {
+    .fa-magnifying-glass, .search-btn-mobile-i {
         display: block;
         color: white;
         cursor: pointer;
@@ -578,6 +583,7 @@ nav a:hover {
     #filtres {
         width: auto;
         display: block;
+        margin: 10px;
     }
 
     #filtres button {
@@ -585,6 +591,10 @@ nav a:hover {
     }
 
     #filtres h2 {
+        margin: 20px;
+    }
+
+    .bloc-info {
         margin: 20px;
     }
 
@@ -649,6 +659,7 @@ nav a:hover {
         display: flex;
         flex-direction: column;
         padding: 15px;
+        height: auto;
     }
 
     .contact-ft h2,

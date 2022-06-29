@@ -30,9 +30,9 @@
       <p>En plein centre ville ou en pleine nature</p>
     </div>
     <form id="searchform">
-      <div id="location"><i class="fa-solid fa-location-dot"></i>
-      </div>
       <div id="searchbar">
+        <div id="location"><i class="fa-solid fa-location-dot"></i>
+        </div>
         <input type="search" placeholder="Marseille, France"/>
         <input type="button" value="Recherche" class="search-btn"/>
         <input type="button" value="&#160;" class="search-btn-mobile search-btn"/><i
@@ -49,7 +49,12 @@
     <button><i class="fa-solid fa-dog"></i>Animaux autorisés</button>
   </div>
   <div class="bloc-info">
-    <p id="infos"><i class="fa-solid fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+    <div>
+       <i class="fa-solid fa-info"></i>
+    </div>
+    <div>
+      <p class="infos">Plus de 500 logements sont disponibles dans cette ville</p>
+    </div>
   </div>
   <!-- Section 3 : Hébergements -->
   <section id="card-hosts">
